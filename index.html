@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  </head>
+  <body>
+    <a href="#main" id="skip" aria-label="Skip to Main Content">Skip to Main Content</a>
+    <nav id="desktop-nav" aria-label="desktop view nav">
+        <div class="logo">Brian Wu</div>
+        <div>
+            <ul class="nav-links">
+            <li><a href="index.html">About</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav" aria-label="tablet and mobile view nav">
+      <div class="logo">Brian Wu</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="clickMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="hamburger-links">
+          <li><a href="index.html" onclick="clickMenu()">About</a></li>
+          <li><a href="experience.html" onclick="clickMenu()">Experience</a></li>
+          <li><a href="projects.html" onclick="clickMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="clickMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main id="main">
+    <section id="profile">
+      <div class="pic-container">
+        <img src="./images/profile-pic2.png" alt="profile picture">
+      </div>
+      <div class="section-text">
+        <p class="section-text-p1">Hello, I'm</p>
+        <h1 class="title">Brian Wu</h1>
+        <p class="section-text-p2"></p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./images/Brian_Wu_Resume.pdf')"
+          >
+            Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./images/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/briawu'"
+          >
+          <img
+            src="./images/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/briwu'"
+          >
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="pic-container">
+          <img
+            src="./images/about-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          >
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              
+              <h2>Experience</h2>
+              <p>3+ years <br>Software Development</p>
+            </div>
+            <div class="details-container">
+              
+              <h2>Education</h2>
+              <p>B.Sc. Computer Science<br>University of Michigan</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              As an enthusiastic undergraduate student majoring in computer science, 
+              I am deeply passionate about software development and dedicated to bringing innovative 
+              projects to life. With a keen interest in exploring cutting-edge technologies, 
+              I actively engage in various coding endeavors, pushing the boundaries of my skills to create impactful and visually compelling projects. 
+              Motivated by a love for problem-solving and a commitment to continuous learning, 
+              I strive to contribute to the ever-evolving field of technology through my creativity and dedication to building exciting software solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./images/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          >
+          <p><a href="mailto:briawu@umich.edu">briawu@umich.edu</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./images/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          >
+          <p><a href="https://www.linkedin.com/in/briawu">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    </main>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="index.html">About</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
